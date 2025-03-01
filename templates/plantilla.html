@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%} {% endblock %}</title>
+
+
+    </style>
+    
+</head>
+
+<body>
+
+</style>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación Cool</title>
+    <style>
+        * {
+            margin: 0.5;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #086d13, #8aeb0a);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #1e1e2e;
+            background: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">The Cursed Isle</div>
+        <ul class="nav-links">
+            <li><a href="/">Inicio</li>
+            <li><a href="jugetes">Jugetes Dinosaurios</a></li>
+            <li><a href="contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+
+    <div class="container">
+        {% block body %}
+
+        {% endblock %}
+    </div>
+    
+    <script>src="bootstrap/js/bootstrap.min.js"</script>
+    
+</html>

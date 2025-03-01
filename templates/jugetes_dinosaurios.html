@@ -1,0 +1,200 @@
+{% extends "./plantilla.html" %}
+
+{% block title%} Jugetes {% endblock %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+</head>
+
+<body>
+    
+
+<style>
+
+    /* Style Img*/
+*::after,
+::before,
+*{
+    margin: 8;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+/* Main */
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.item{
+    border-radius: 10px;
+}
+.item:hover{
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+
+.item img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+    
+}
+.item figure{
+    overflow: hidden;
+}
+.item:hover img{
+    transform: scale(0.70);
+}
+.info-product{
+    padding: 5% 10%;
+    font-size:15px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.price{
+    font-size: 16px;
+    font-weight: 900;
+}
+.info-product button{
+    border: none;
+    background: none;
+    background-color: rgb(55, 130, 20);
+    color: white;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+</style>
+<div class="container">
+    <style>
+        .container{
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+</style>
+
+<body>
+
+<div class="container-items">
+<div class="item">
+    <figure>
+        <img src="https://media.dondinojuguetes.es/product/velociraptor-foam-sonido-800x800_ZMZ3Gwu.jpg" class="velo" alt="jugetes">
+    </figure>
+    <div class="info-product">
+        <h2>Velociraptor con sonido</h3>
+        <p class="price">$21.95</p>
+          <button>Comprar</button>
+       
+    </div>
+</div>
+
+
+<div class="item">
+    <figure>
+        <img src="https://titan.vtexassets.com/arquivos/ids/159960/Juguetes-Otros_30199280_1.jpg?v=637318124180300000" alt="jugetes">
+    </figure>
+    <div class="info-product">
+        <h2>Triceratops de control remoto</h2>
+        <p class="price">$16.99</p>
+       <button>Comprar</button>
+    </div>
+</div>
+
+<div class="item">
+    <figure>
+        <img src="https://m.media-amazon.com/images/I/A1BXrXlyyGL._AC_SL1500_.jpg" alt="jugetes">
+    </figure>
+    <div class="info-product">
+        <h2>Set de excavación de fósiles</h2>
+        <p class="price">$34.99</p>
+       <button>Comprar</button>
+    </div>
+</div>
+
+<div class="item">
+    <figure>
+        <img src="https://m.media-amazon.com/images/I/81PpIBuJSYL._AC_SL1500_.jpg" alt="jugetes">
+    </figure>
+    <div class="info-product">
+        <h2>Dinosaurios LEGO</h2>
+        <p class="price">$151,13</p>
+       <button>Comprar</button>
+    </div>
+</div>
+
+<div class="item">
+    <figure>
+        <img src="https://i1.wp.com/xn--oo-yjab.cl/wp-content/uploads/2019/02/14319ok1.jpg?resize=768%2C768&ssl=1" alt="jugetes">
+    </figure>
+    <div class="info-product">
+        <h2> Mundo jurásico de juguete</h2>
+        <p class="price">$6.99</p>
+       <button>Comprar</button>
+    </div>
+</div>
+
+<div class="item">
+    <figure>
+        <img src="https://m.media-amazon.com/images/I/81tl1ZFBnBL._AC_SL1500_.jpg" alt="jugetes">
+    </figure>
+    <div class="info-product">
+        <h2>Pista de carreras con dinosaurios</h2>
+        <p class="price">$218.77</p>
+       <button>Comprar</button>
+    </div>
+</div>
+
+<div class="item">
+    <figure>
+        <img src="https://tools.toywiz.com/_images/_webp/_products/me/jwplshtrex.webp" alt="jugetes">
+    </figure>
+    <div class="info-product">
+        <h2>Dinosaurio de peluche</h2>
+        <p class="price">$24.99</p>
+       <button>Comprar</button>
+    </div>
+</div>
+
+
+<div class="item">
+    <figure>
+        <img src="https://img.clasf.co/2021/12/12/Huevo-Smashers-Lava-Epic-Egg-20211212072209.9923450015.jpg" alt="jugetes">
+    </figure>
+    <div class="info-product">
+        <h2>Huevos sorpresa de dinosaurio</h2>
+        <p class="price">$4.16</p>
+       <button>Comprar</button>
+    </div>
+ </div>
+</div>
+</body>
+
+</html>
+
+
+{% endblock %}

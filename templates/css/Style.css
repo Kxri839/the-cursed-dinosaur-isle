@@ -1,0 +1,34 @@
+/*globales*/
+
+*::after,
+::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 40px 0;
+}
+
+/* Main */
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+.item:hover{
+box-shadow: 0 10px 20px rgba(255, 74, 74, 0.2);
+}
